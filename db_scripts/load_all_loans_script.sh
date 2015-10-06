@@ -10,9 +10,9 @@ fannie_script="db_scripts/populate_fannie_from_raw.sql"
 
 base_data_dir="/path/to/raw/data/files/"
 
-for y in $(seq 2013 1999)
+for y in $(seq 1999 2013)
 do
-  for q in $(seq 4 1)
+  for q in $(seq 1 4)
   do
     if (($y < 2013 || $q < 4)); then
       echo "`date`: beginning freddie load for $y Q$q"
